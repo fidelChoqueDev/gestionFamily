@@ -1,0 +1,28 @@
+.container {
+	background: chocolate;
+	margin-inline: auto;
+	padding-inline: 4px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+	min-width: 100vh;
+	max-width: 100%;
+	gap: 16px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	/*border-radius: 8px;*/
+	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.1);*/
+}
+.header {
+	background-color: antiquewhite;
+	position: sticky;
+	top: 0;
+	/*z-index: 20;*/
+	justify-content: space-between;
+	display: flex;
+	gap: 16px;
+	border-bottom-width: 16px;
+	align-items: center;
+	padding-left: 16px;
+	padding-right: 16px;
+}
