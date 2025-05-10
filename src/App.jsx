@@ -1,17 +1,21 @@
+
 import { LayoutMain } from './layout/layoutMain'
 import './App.css'
+import { Routes, Route } from 'react-router'
+import { Gastos } from './pages/Gastos'
+import { Ingresos } from './pages/Ingresos'
+import { Notfound } from './pages/Notfound'
 
 function App() {
 
   return (
     <LayoutMain>
-      <div className="content">
-        <h1>Welcome to the App</h1>
-        <p>This is the main content area.</p>
-      </div>
-      <footer className="footer">
-        <p>Footer content goes here.</p>
-      </footer>
+      <Routes>
+        <Route path="/" element={<h2>Home</h2>} />
+        <Route path="/gastos" element={<Gastos/>} />
+        <Route path="/ingresos" element={<Ingresos/>} />
+        <Route path="*" element={<Notfound/>} />
+      </Routes>
     </LayoutMain>
   )
 }

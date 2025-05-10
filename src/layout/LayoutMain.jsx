@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import "./LayoutMain.css"
 
 export const LayoutMain = ( {children} ) => {
@@ -5,7 +6,7 @@ export const LayoutMain = ( {children} ) => {
     <div className="container">
 			<header className="header">
 				<img src="/logoV2.svg" alt="Logo" className="logo" />
-				<h1>Header</h1>
+				<h1>Crash Coin</h1>
 				<nav>
 					<ul>
 						<li><a href="#">Link 1</a></li>
@@ -17,4 +18,8 @@ export const LayoutMain = ( {children} ) => {
 			{children}
 		</div>
   )
-}
+};
+
+LayoutMain.propTypes = {
+  children: PropTypes.node.isRequired,
+};
