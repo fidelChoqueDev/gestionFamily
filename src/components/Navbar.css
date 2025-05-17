@@ -17,7 +17,7 @@
 	background-color: antiquewhite;
 	position: sticky;
 	top: 0;
-	/*z-index: 20;*/
+	z-index: 20;
 	justify-content: space-between;
 	display: flex;
 	gap: 16px;
