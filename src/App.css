@@ -8,10 +8,80 @@ body {
   background: linear-gradient(45deg,#40E0D0,yellow);
   color: #333;
 }
-/*#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}*/
 
+/*Responsive variables y estilos globales*/
+#root {
+  --max-width: 1280px;
+  --container-pad: 1rem;
+  --bg-gradient-start: #40E0D0; /*linear-gradient(45deg,#40E0D0,yellow); este es sugerencia copilot*/
+  --bg-gradient-end: yellow;
+  --text-color: #333;
+  --card-bg: #fff;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+  --gap: 1rem;
+  --fs-base: 16px;
+}
+
+/*Estilos para contenedor principal*/
+#root,
+.app-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--container-pad) * 1.5);
+  text-align: center;
+}
+
+/* Layaout y componentes comunes */
+.container {
+  width: 100%;
+  padding: var(--container-pad);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 0.5rem 0;
+}
+
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--bg-gradient-start);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--gap);  
+}
+
+.card {
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Tipografía responsive usando tamaño base en rem*/
+html {font-size: 100%;} /*16px by default (var(--fs-base))*/
+h1 {font-size: 2.5rem; margin-bottom: 0.5rem;} /*40px*/
+h2 {font-size: 2rem; margin-bottom: 0.5rem;} /*32px*/
+p {font-size: 1rem; line-height: 1.4; margin-bottom: 1rem;} /*16px*/
+
+/*Madia queries para responsividad*/
