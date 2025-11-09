@@ -26,3 +26,13 @@
 	padding-left: 16px;
 	padding-right: 16px;
 }
+.nav-links{
+	display: flex;
+	gap: 36px;
+	list-style: none;
+}
+.logo-container{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
