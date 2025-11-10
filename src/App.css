@@ -85,3 +85,47 @@ h2 {font-size: 2rem; margin-bottom: 0.5rem;} /*32px*/
 p {font-size: 1rem; line-height: 1.4; margin-bottom: 1rem;} /*16px*/
 
 /*Madia queries para responsividad*/
+@media (max-width:480px) {
+  :root { --conteiner-pad: 0.5rem; }
+  html { font-size: 87.5%; } /*14px*/
+  .header { flex-direction: column; align-items: flex-start; gap: 0.5rem;}
+  .nav { justify-content: flex-start; }
+  .grid { grid-template-columns: 1fr; }
+  .card { padding: 0.75rem; }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  :root { --conteiner-pad: 1rem; }
+  html { font-size: 96%; } /*15.4px*/
+  .header { padding: 0.5rem 0;}
+  .nav { justify-content: flex-start; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  :root { --conteiner-pad: 1.25rem; }
+  html { font-size: 100%; } /*16px*/
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width:1025px) {
+  :root { --conteiner-pad: 1.5rem; }
+  html { font-size: 112.5%; } /*18px*/
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/*Estilos adicionales para mejorar la apariencia Accesibilidad y comportamiento*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: inherit /* var(--bg-gradient-start)*/;
+  text-decoration: none;
+}
+button:focus,
+a:focus {
+  outline: 2px solid rgba(0,0,0,0.12);/*var(--bg-gradient-start);*/
+  outline-offset: 2px;
+}
