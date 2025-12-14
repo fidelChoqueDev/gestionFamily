@@ -16,6 +16,11 @@ export const Navbar = () => {
 				</li>
 			))}
 		</ul>
+		<div className="nav_toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 	</nav>
   )
 };

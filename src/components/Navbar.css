@@ -34,6 +34,12 @@
 	width: auto;
 }
 
+.nav_toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
 .header ul {
   list-style: none;
   display: flex;
@@ -51,3 +57,18 @@
 .header a:hover {
   color: #102c19;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	ul {
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: -100%;
+		background-color: rgb(147, 31, 93);
+		width: 100%;
+		height: -webkit-fill-available;
+
+		transition: 0.3s ease all;
+	}
+	}
