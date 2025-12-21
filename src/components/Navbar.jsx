@@ -7,10 +7,11 @@ export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="header">
-			<div>
+			<div className="logo-container">
 				<img src={logo} alt="Logo" className="logo" />
+				<h1>Crash Coin</h1>
 			</div>
-			<h1>Crash Coin</h1>
+			
 			<div className={`nav_items ${isOpen && "open"}`}>
 				<ul>
 					{NavbarLinks.map((link) => (

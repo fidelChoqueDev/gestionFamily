@@ -15,21 +15,17 @@
 }
 .header {
 	background-color: rgb(226, 207, 217);
-	position:relative;
-	top: 0;
-	z-index: 20;
+	height: 60px; /* Es el alto de la barra de navegación */
 	justify-content: space-between;
 	display: flex;
-	gap: 6px;
-	border-bottom-width: 16px;
 	align-items: center;
-	padding-left: 16px;
-	padding-right: 16px;
-	text-decoration: none;
 }
 
+.logo-container {
+	display: flex;
+	}
+
 .logo {
-	padding-top: 7px;
 	height: 65px;
 	width: auto;
 }
