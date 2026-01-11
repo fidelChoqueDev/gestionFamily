@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import logo from "../assets/logoV2.svg"
+import logo from "../assets/logoV2.png"
 import { NavbarLinks } from "../utils/Ruetes"
 import { useState } from "react";
 
@@ -7,8 +7,8 @@ export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="header">
+			<img src={logo} alt="Logo" className="logo" />
 			<div className="logo-container">
-				<img src={logo} alt="Logo" className="logo" />
 				<h1>Crash Coin</h1>
 			</div>
 			
