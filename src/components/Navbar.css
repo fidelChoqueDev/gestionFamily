@@ -49,7 +49,7 @@
 @media (max-width: 768px) {
 	.nav_items  ul {
 		position: absolute;
-		top: 60px;
+		top: 65px;
 		left: 0;
 		background: linear-gradient(45deg,yellow, #40E0D0);
 		display: flex;
