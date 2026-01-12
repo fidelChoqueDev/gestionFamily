@@ -56,12 +56,12 @@
 		flex-direction: column;
 		width: 100%; /* Hacer que ocupe todo el ancho opcional */
 		height: -webkit-fill-available;
-		/*transform: translateX(-100%);
-		transition: 0.3s ease all;*/
+		transform: translateX(-100%);
+		transition: 0.3s ease all; /* Animación suave al abrir/cerrar el menú */
 	}
 
 	.nav_items.open{
-		transform: translateX(0) !important;
+		transform: translateX(100%) !important;
 	}
 
 	.nav_toggle {
