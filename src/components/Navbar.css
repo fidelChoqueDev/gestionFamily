@@ -60,8 +60,8 @@
 		transition: 0.3s ease all; /* Animación suave al abrir/cerrar el menú */
 	}
 
-	.nav_items.open{
-		transform: translateX(100%) !important;
+	.nav_items.open ul{
+		transform: translateX(0) !important;
 	}
 
 	.nav_toggle {
