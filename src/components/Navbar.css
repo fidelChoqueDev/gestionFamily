@@ -5,6 +5,7 @@
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
+	gap: 9px;
 }
 
 .logo-container {
@@ -22,24 +23,34 @@
 }
 
 .nav_items a{
-	margin: 15px;
+	margin: 3px;
 	color: rgb(113, 61, 197);
 	position: relative;
 	text-decoration: none;
+	padding: 7px 10px;
+	border-radius: 20px;
+	border: 2px solid transparent;
+	transition: all 0.7s ease;
+	white-space: nowrap;
 	font-weight: 500;
 }
 
 .nav_items a:hover {
   color: #102c19;
+  background-color: aqua;
 }
 
 .nav_items ul {
   position: relative;
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: 9px;
   margin: 0;
   padding: 0;
+}
+
+.nav_items ul li {
+	margin: 15px 15px;
 }
 
 
@@ -54,7 +65,7 @@
 		background: linear-gradient(45deg,yellow, #40E0D0);
 		display: flex;
 		flex-direction: column;
-		width: 100%; /* Hacer que ocupe todo el ancho opcional */
+		width: 40%; /* Hacer que ocupe todo el ancho opcional */
 		height: -webkit-fill-available;
 		transform: translateX(-100%);
 		transition: 0.3s ease all; /* Animación suave al abrir/cerrar el menú */

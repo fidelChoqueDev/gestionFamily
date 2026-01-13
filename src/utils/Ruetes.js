@@ -16,12 +16,7 @@ export const NavbarLinks = [
 		},
 		{ 
 			id:4,
-			name: "Inicio Sesion", 
+			name: "Login", 
 			path: "/login" 
-		},
-		{ 
-			id:5,
-			name: "Registro", 
-			path: "/register" 
 		},
 	];
