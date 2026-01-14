@@ -38,6 +38,7 @@
 .nav_items a:hover {
   color: #102c19;
   background-color: aqua;
+  border: 2px solid #fff;
 }
 
 .nav_items ul {
