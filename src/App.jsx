@@ -10,7 +10,7 @@ import { Home } from './pages/Home'
 function App() {
 
   return (
-    <div className='container'>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
