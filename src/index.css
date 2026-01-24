@@ -8,6 +8,9 @@ body {
   font-family: Arial, sans-serif;
   background: url("../src/assets/fondoEst.jpeg") no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body::before {
