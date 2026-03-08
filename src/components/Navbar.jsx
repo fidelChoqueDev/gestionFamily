@@ -6,7 +6,7 @@ import { useState } from "react";
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="header">
+    <nav className="header containerMain">
 			<img src={logo} alt="Logo" className="logo" />
 			<div className="logo-container">
 				<h1>Crash Coin</h1>

@@ -5,11 +5,14 @@
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background: url("../src/assets/fondoEst.jpeg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
+  color: rgb(212, 195, 195);
   justify-content: center;
 }
 
@@ -22,4 +25,16 @@ body::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
   z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.containerMain{
+  padding-left: 10%;
+  padding-right: 10%;
 }

@@ -6,6 +6,7 @@ import { Gastos } from './pages/Gastos'
 import { Ingresos } from './pages/Ingresos'
 import { Notfound } from './pages/Notfound'
 import { Home } from './pages/Home'
+import { Programas } from './components/Programas/Programas'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ingresos" element={<Ingresos/>} />
         <Route path="*" element={<Notfound/>} />
       </Routes>
+      <Programas/>
     </div>
   )
 }

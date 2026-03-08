@@ -1,11 +1,30 @@
 
 .container{
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 80%;
     text-align: center;
-    padding-right: 10%;
+    max-width: 800px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn{
+    background: wheat; /*fondo del boton*/
+    color: blue;       /*color del texto*/
+    padding: 7px 20px;   /* espacio del texto con el borde (sup e inf)px (Izq y der)px*/
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+.container h1{
+    font-size: 37px;
+    font-weight: 600; /*grosor de la letra*/
+}
+
+.container p {
+    max-width: 700px; /*establece el ancho maximo y anula a width*/
+    margin: 10px auto 20px;
+    line-height: 1.4;
 }
